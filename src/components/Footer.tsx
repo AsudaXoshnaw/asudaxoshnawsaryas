@@ -17,7 +17,7 @@ export default function Footer({ onOpenModal }: FooterProps) {
           <p className="text-sm md:text-base text-slate-400 max-w-md mx-auto leading-relaxed">
             پێشەنگ لە گواستنەوەی بزنسەکان بۆ ناو دنیای سەردەمیی دیجیتاڵ. کارەکانتان لەگەڵ ئێمە بێوێنە دەبن.
           </p>
-        </div>
+        </div>   
 
         {/* REPEATING THE CALL TO ACTION BUTTON */}
         <div>
