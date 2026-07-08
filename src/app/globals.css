@@ -1,0 +1,53 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-dark: #162f4e;
+  --color-brand-gold: #c5a059;
+  
+  --font-sans: var(--font-noto-arabic), var(--font-jakarta-sans), ui-sans-serif, system-ui;
+}
+
+:root {
+  --background: #162f4e;
+  --foreground: #ffffff;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  overflow-x: hidden;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #162f4e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c5a059;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #e2c080;
+}
+
+/* Custom Pulse Animation for Main CTA */
+@keyframes cta-pulse {
+  0%, 100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(197, 160, 89, 0.4);
+  }
+  50% {
+    transform: scale(1.03);
+    box-shadow: 0 0 25px 8px rgba(197, 160, 89, 0.25);
+  }
+}
+
+.glow-btn {
+  animation: cta-pulse 2.5s infinite;
+}
